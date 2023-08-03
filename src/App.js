@@ -54,7 +54,7 @@ function App() {
   let removeFromCart = (v) => {
     const indexValue = cartItems.findIndex((obj) => obj.id === v.id);
     cartItems.splice(indexValue, 1);
-    setcartItems([...v]);
+    setcartItems([...cartItems]);
   };
 
   return (
